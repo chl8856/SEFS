@@ -1,6 +1,4 @@
-# SEFS
-Codebase for SEFS: Self-Supervision Enhanced Feature Selection with Correlated Gates 
-
+# SEFS: Self-Supervision Enhanced Feature Selection with Correlated Gates
 
 Authors: Changhee Lee*, Fergus Imrie*, Mihaela van der Schaar
 
