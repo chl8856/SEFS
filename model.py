@@ -29,7 +29,7 @@ def erfinv(x):
 
 
 ### DEFINE PREDICTOR
-def predictor(x_, o_dim_, o_type_, num_layers_=1, h_dim_=100, activation_fn=tf.nn.relu, keep_prob_=1.0, w_reg_=None, reuse=tf.AUTO_REUSE):
+def predictor(x_, o_dim_, o_type_, num_layers_=1, h_dim_=100, activation_fn=tf.nn.relu, keep_prob_=1.0, w_reg_=None, reuse=tf.compat.v1.AUTO_REUSE):
     '''
         x_            : (2D-tensor) input
         o_dim_        : (int) output dimension
@@ -73,7 +73,7 @@ def loss_y(y_true_, y_pred_, y_type_):
     return tmp_loss
 
 
-def fcnet(x_, o_dim_, o_fn_, num_layers_=1, h_dim_=100, activation_fn=tf.nn.relu, keep_prob_=1.0, w_reg_=None, name='fcnet', reuse=tf.AUTO_REUSE):
+def fcnet(x_, o_dim_, o_fn_, num_layers_=1, h_dim_=100, activation_fn=tf.nn.relu, keep_prob_=1.0, w_reg_=None, name='fcnet', reuse=tf.compat.v1.AUTO_REUSE):
     '''
         x_            : (2D-tensor) input
         o_dim_        : (int) output dimension
